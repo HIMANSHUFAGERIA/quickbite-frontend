@@ -1,7 +1,7 @@
 import { store } from '../store/store'
 import { logout } from '../store/authSlice'
 
-const BASE_URL = '/api'
+const BASE_URL = `${import.meta.env.APP_URL}/api`
 
 interface FetchOptions extends RequestInit {
   body?: any
